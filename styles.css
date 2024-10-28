@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: Norse-Bold;
+  src: url('fonts/Norse-Bold.otf') format('truetype');
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+  display: flex;
+}
+
+.img-container {
+  position: relative;
+  height: 100vh;
+  width: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-img {
+  height: 100vh;
+  width: 35vw;
+  object-fit: cover;
+}
+
+.img-logo-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  gap: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.odin-logo {
+  width: 100px;
+  height: auto;
+}
+
+.logo-text {
+  color: white;
+  font-size: 8rem;
+  font-family: 'Norse-Bold', sans-serif;
+}
+
+.photographer-credit {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  border-radius: 8px;
+  color: white;
+}
+
+.photographer-name {
+  font-weight: bold;
+}
+
+form {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+  color: #212529;
+}
+
+.name-info,
+.contact-info,
+.password-info {
+  display: flex;
+  gap: 2.4rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #343a40;
+  margin-bottom: 0.4rem;
+}
+
+input {
+  height: 2.8rem;
+  border-radius: 0.2rem;
+  border: 1px solid #868e96;
+  outline: none;
+  padding-left: 0.4rem;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+input:invalid:focus {
+  border: 2px solid red;
+}
+
+input:valid:focus {
+  border: 2px solid #2f9e44;
+}
+
+.btn {
+  width: 50%;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  background-color: #e67700;
+  color: white;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #f59f00;
+}
+
+a {
+  color: #e67700;
+}
